@@ -20,11 +20,13 @@ func Day1Part1() (int, error) {
 	twodigits, err := regexp.Compile(`\d.*\d`)
 	if err != nil {
 		fmt.Printf("Error compiling regex: %v", err)
+		return 0, err
 	}
 
 	onedigit, err := regexp.Compile(`\d`)
 	if err != nil {
 		fmt.Printf("Error compiling regex: %v", err)
+		return 0, err
 	}
 
 	sum := 0
