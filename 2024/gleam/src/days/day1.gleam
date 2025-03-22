@@ -5,9 +5,9 @@ import gleam/result
 import gleam/string
 import simplifile
 
-const example_file = "./inputs/day1example.txt"
+const example_file = "../inputs/day1example.txt"
 
-const file = "./inputs/day1.txt"
+const file = "../inputs/day1.txt"
 
 fn get_input(use_example: Bool) {
   case use_example {

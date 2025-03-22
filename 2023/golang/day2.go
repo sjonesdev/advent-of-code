@@ -14,7 +14,7 @@ func Day2Part1() (int, error) {
 	greencubes := 13
 	bluecubes := 14
 
-	file, err := os.Open("../inputday2.txt")
+	file, err := os.Open("../inputs/inputday2.txt")
 	if err != nil {
 		fmt.Printf("Error opening file: %v", err)
 		return 0, err
@@ -90,7 +90,7 @@ func Day2Part1() (int, error) {
 }
 
 func Day2Part2() (int, error) {
-	file, err := os.Open("../inputday2.txt")
+	file, err := os.Open("../inputs/inputday2.txt")
 	if err != nil {
 		fmt.Printf("Error opening file: %v", err)
 		return 0, err

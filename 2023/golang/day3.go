@@ -14,7 +14,7 @@ import (
 var symbols = []rune{'*', '-', '=', '&', '#', '$', '/', '+', '@', '%'}
 
 func findSymbols() {
-	file, err := os.Open("../inputday3.txt")
+	file, err := os.Open("../inputs/inputday3.txt")
 	if err != nil {
 		fmt.Printf("Error opening file: %v", err)
 		return
@@ -116,7 +116,7 @@ func checkLine(prev string, cur string, next string, linelen int) int {
 
 // assumptions: all lines of the input file are the same length, there are no numbers longer than 3 digits
 func Day3Part1() (int, error) {
-	file, err := os.Open("../inputday3.txt")
+	file, err := os.Open("../inputs/inputday3.txt")
 	if err != nil {
 		fmt.Printf("Error opening file: %v", err)
 		return 0, err
@@ -153,7 +153,7 @@ func Day3Part1() (int, error) {
 }
 
 func Day3Part2() (int, error) {
-	file, err := os.Open("../inputday3.txt")
+	file, err := os.Open("../inputs/inputday3.txt")
 	if err != nil {
 		fmt.Printf("Error opening file: %v", err)
 		return 0, err

@@ -4,9 +4,9 @@ import gleam/result
 import gleam/string
 import simplifile
 
-const example_file = "./inputs/day2example.txt"
+const example_file = "../inputs/day2example.txt"
 
-const file = "./inputs/day2.txt"
+const file = "../inputs/day2.txt"
 
 type Direction {
   Increasing
