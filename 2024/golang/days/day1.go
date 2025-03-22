@@ -9,13 +9,13 @@ import (
 	"strings"
 )
 
-const exampleInputPath = "../inputs/day1example.txt"
-const realInputPath = "../inputs/day1.txt"
+const day1ExampleInputPath = "../inputs/day1example.txt"
+const day1RealInputPath = "../inputs/day1.txt"
 
-func getInput(useExample bool) ([]int, []int) {
-	inputPath := realInputPath
+func getDay1Input(useExample bool) ([]int, []int) {
+	inputPath := day1RealInputPath
 	if useExample {
-		inputPath = exampleInputPath
+		inputPath = day1ExampleInputPath
 	}
 	file, err := os.Open(inputPath)
 	if err != nil {
@@ -48,7 +48,7 @@ func getInput(useExample bool) ([]int, []int) {
 }
 
 func Day1Pt1(useExample bool) int {
-	left, right := getInput(useExample)
+	left, right := getDay1Input(useExample)
 
 	slices.Sort(left)
 	slices.Sort(right)
@@ -67,11 +67,11 @@ func Day1Pt1(useExample bool) int {
 }
 
 func Day1Pt2(useExample bool) int {
-	left, right := getInput(useExample)
+	left, right := getDay1Input(useExample)
 
 	rightOccurences := make(map[int]int)
 	for _, val := range right {
-		rightOccurences[val] += 1
+		rightOccurences[val]++
 	}
 	similarity := 0
 	for _, val := range left {
